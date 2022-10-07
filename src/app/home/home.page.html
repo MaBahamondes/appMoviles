@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-button slot="start" color="light" class="backBoton">
+      <ion-menu-button autoHide="false" class="botonMenu"></ion-menu-button>
+    </ion-button>
+    <ion-title>
+      RegistrApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="primary">
+  <div class="fondo">
+    <ion-card style="margin-top: 65px;">
+      <ion-list style="padding: 0;">
+        <ion-item routerLink="/horario" detail>
+          <ion-avatar slot="start" style="margin: 0; align-items: center;">
+            <ion-icon name="time"></ion-icon>
+          </ion-avatar>
+          <ion-label>Horario</ion-label>
+        </ion-item>
+        <ion-item routerLink="/asignatura" detail>
+          <ion-avatar slot="start" style="margin: 0;">
+            <ion-icon name="book"></ion-icon>
+          </ion-avatar>
+          <ion-label>Asignaturas</ion-label>
+        </ion-item>
+        <ion-item routerLink="/asistencia" detail>
+          <ion-avatar slot="start" style="margin: 0;">
+            <ion-icon name="checkmark"></ion-icon>
+          </ion-avatar>
+          <ion-label>Asistencias</ion-label>
+        </ion-item>
+        <ion-item routerLink="/calendario" detail>
+          <ion-avatar slot="start" style="margin: 0;">
+            <ion-icon name="calendar-number"></ion-icon>
+          </ion-avatar>
+          <ion-label>Calendario</ion-label>
+        </ion-item>
+        <ion-item routerLink="/eventos" detail>
+          <ion-avatar slot="start" style="margin: 0;">
+            <ion-icon name="game-controller"></ion-icon>
+          </ion-avatar>
+          <ion-label>Eventos</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+  </div>
+</ion-content>
